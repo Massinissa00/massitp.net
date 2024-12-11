@@ -1,24 +1,17 @@
+using Microsoft.AspNetCore.Identity;
 using System.ComponentModel.DataAnnotations;
 
-namespace mvc.Models;
-
-public class Teacher
+namespace mvc.Models
 {
-    [Required(ErrorMessage = "L'identifiant est obligatoire")]
-    [Display(Name = "Identifiant")]
-    public int Id { get; set; }
+    public class Teacher : IdentityUser
+    {
+        [Required]
+        public string Firstname { get; set; }
 
-    [StringLength(20, MinimumLength = 5)]
-    public string Lastname { get; set; }
-    public string Firstname { get; set; }
+        [Required]
+        public string Lastname { get; set; }
 
-    [Required]
-    [EmailAddress]
-    public string Email { get; set; }
-
-    [Required]
-    [Url]
-    public string PersonalWebSite { get; set; }
-
-
+        [Url]
+        public string PersonalWebSite { get; set; }
+    }
 }

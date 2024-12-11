@@ -5,16 +5,16 @@ using mvc.Models;
 public class TeacherController : Controller
 {
     // liste d'enseignants
-    private static List<Teacher> _teachers = new List<Teacher>
-    {
-        new Teacher { Id = 1, Lastname = "Doe", Firstname = "John" },
-        new Teacher { Id = 2, Lastname = "Smith", Firstname = "Jane" }
-    };
+    // private static List<Teacher> _teachers = new List<Teacher>
+    // {
+    //     new Teacher { Id = 1, Lastname = "Doe", Firstname = "John" },
+    //     new Teacher { Id = 2, Lastname = "Smith", Firstname = "Jane" }
+    // };
 
 
     public IActionResult Index()
     {
-        return View(_teachers);
+        return View();
     }
 
     // Ecrire une liste d'Actions
@@ -33,12 +33,12 @@ public class TeacherController : Controller
     public IActionResult Add(Teacher teacher)
     {
         // Declencher le mecanisme de validation
-        if (!ModelState.IsValid)
-        {
-            return View();
-        }
-        // Ajouter le teacher
-        _teachers.Add(teacher);
+        // if (!ModelState.IsValid)
+        // {
+        //     return View();
+        // }
+        // // Ajouter le teacher
+        // _teachers.Add(teacher);
         return RedirectToAction("Index");
     }
 
@@ -49,18 +49,18 @@ public class TeacherController : Controller
     public IActionResult ShowDetails(int id)
     {
         Teacher teacher = new Teacher();
-        if (id == 10)
-        {
-            teacher.Firstname = "John";
-            teacher.Lastname = "Doe";
-            teacher.Id = 10;
-        }
-        else
-        {
-            teacher.Firstname = "Jane";
-            teacher.Lastname = "Smith";
-            teacher.Id = 20;
-        }
+        // if (id == 10)
+        // {
+        //     teacher.Firstname = "John";
+        //     teacher.Lastname = "Doe";
+        //     teacher.Id = 10;
+        // }
+        // else
+        // {
+        //     teacher.Firstname = "Jane";
+        //     teacher.Lastname = "Smith";
+        //     teacher.Id = 20;
+        // }
         return View(teacher);
     }
 

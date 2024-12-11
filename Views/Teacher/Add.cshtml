@@ -1,23 +1,35 @@
 @model Teacher
-<h1>Creation d'un nouvel enseignant</h1>
 
-<form asp-action="Add" asp-controller="Teacher" method="post">
-    @* ceci est un commentaire *@
+<h1>Création d'un nouvel enseignant</h1>
 
+<form asp-action="Add" method="post">
     <div class="form-group">
-        <label asp-for="Id"></label> <input asp-for="Id">
-        <span asp-validation-for="Id" class="text-danger"></span>
+        <label asp-for="UserName"></label>
+        <input asp-for="UserName" class="form-control" />
+        <span asp-validation-for="UserName" class="text-danger"></span>
     </div>
     <div class="form-group">
-        <label asp-for="Firstname"></label> <input asp-for="Firstname">
+        <label asp-for="Firstname"></label>
+        <input asp-for="Firstname" class="form-control" />
         <span asp-validation-for="Firstname" class="text-danger"></span>
     </div>
     <div class="form-group">
-        <label asp-for="Lastname"></label> <input asp-for="Lastname">
+        <label asp-for="Lastname"></label>
+        <input asp-for="Lastname" class="form-control" />
         <span asp-validation-for="Lastname" class="text-danger"></span>
     </div>
+    <div class="form-group">
+        <label asp-for="Email"></label>
+        <input asp-for="Email" class="form-control" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="PersonalWebSite"></label>
+        <input asp-for="PersonalWebSite" class="form-control" />
+        <span asp-validation-for="PersonalWebSite" class="text-danger"></span>
+    </div>
 
-    <input type="submit" value="Creation d'un enseignant" class="btn btn-primary">
+    <button type="submit" class="btn btn-primary">Créer un enseignant</button>
 </form>
 
 <div class="text-danger" asp-validation-summary="All"></div>
