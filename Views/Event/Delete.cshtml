@@ -1,0 +1,14 @@
+@model mvc.Models.Event
+
+<h1>Supprimer un événement</h1>
+<p>Êtes-vous sûr de vouloir supprimer cet événement ?</p>
+
+<p><strong>Titre :</strong> @Model.Title</p>
+<p><strong>Date :</strong> @Model.EventDate.ToShortDateString()</p>
+<p><strong>Lieu :</strong> @Model.Location</p>
+
+<form asp-action="Delete" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">Confirmer</button>
+    <a asp-action="Index" class="btn btn-secondary">Annuler</a>
+</form>

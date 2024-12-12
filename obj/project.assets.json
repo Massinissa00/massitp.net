@@ -2678,11 +2678,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\massinissa.ait-maham\\Downloads\\mvcTemplate\\mvcTemplatemassi\\mvc.csproj",
+      "projectUniqueName": "C:\\Users\\massinissa.ait-maham\\Downloads\\mvcTemplatemassi\\mvc.csproj",
       "projectName": "mvc",
-      "projectPath": "C:\\Users\\massinissa.ait-maham\\Downloads\\mvcTemplate\\mvcTemplatemassi\\mvc.csproj",
+      "projectPath": "C:\\Users\\massinissa.ait-maham\\Downloads\\mvcTemplatemassi\\mvc.csproj",
       "packagesPath": "C:\\Users\\massinissa.ait-maham\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\massinissa.ait-maham\\Downloads\\mvcTemplate\\mvcTemplatemassi\\obj\\",
+      "outputPath": "C:\\Users\\massinissa.ait-maham\\Downloads\\mvcTemplatemassi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\massinissa.ait-maham\\AppData\\Roaming\\NuGet\\NuGet.Config"

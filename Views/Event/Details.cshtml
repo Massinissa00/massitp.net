@@ -1,0 +1,10 @@
+@model mvc.Models.Event
+
+<h1>Détails de l'événement</h1>
+<p><strong>Titre :</strong> @Model.Title</p>
+<p><strong>Description :</strong> @Model.Description</p>
+<p><strong>Date :</strong> @Model.EventDate.ToShortDateString()</p>
+<p><strong>Lieu :</strong> @Model.Location</p>
+
+<a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Modifier</a>
+<a asp-action="Index" class="btn btn-secondary">Retour à la liste</a>
